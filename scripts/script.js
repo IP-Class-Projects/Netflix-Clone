@@ -14,3 +14,14 @@ footer.addEventListener('click', () => {
   footer.innerHTML = '286-128';
 });
 
+function selectProfile(profileName) {
+  localStorage.setItem('selectedProfile', profileName);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const selectedProfile = localStorage.getItem('selectedProfile');
+  if (selectedProfile) {
+    const profileIcon = document.querySelector('.nav-item.icon img');
+    profileIcon.src = `./assets/images/Icon/Profile/${selectedProfile}.png`;
+  }
+});
