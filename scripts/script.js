@@ -17,6 +17,7 @@ footer.addEventListener('click', () => {
 function selectProfile(profileName) {
   localStorage.setItem('selectedProfile', profileName);
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   const selectedProfile = localStorage.getItem('selectedProfile');
   if (selectedProfile) {
