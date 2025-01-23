@@ -34,7 +34,18 @@ nav {
   font-size: medium;
   font-weight: 500;
 }
-
+.nav-items .nav-item a{
+  display:inline-block;
+  font-size: medium;
+  font-weight: 500;
+  border:2px solid black;
+  color:white;
+  padding:10px 20px;
+  border-radius: 5px;
+  background-color: red;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 .nav-icons {
   display: flex;
   align-items: center;
