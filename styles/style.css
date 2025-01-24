@@ -28,6 +28,14 @@ body {
     z-index: 0;
 }
 
+.profile-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
 .profile-list {
     max-width: 80%;
     margin: auto;

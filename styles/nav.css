@@ -1,14 +1,14 @@
 nav {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1vw 4vw;
-  font-size: 1.2vw;
-  z-index: 1;
-  transition: all 0.5s;
-  background-color: transparent;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 4vw;
+    font-size: 1.2vw;
+    z-index: 1;
+    transition: all 0.5s;
+    background-color: transparent;
 }
 
 .nav-dark {
