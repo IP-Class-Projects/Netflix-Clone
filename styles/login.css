@@ -121,7 +121,6 @@ form .form-help :where(label, a) {
 
 .form-control {
     position: relative;
-    /* width: 300px; */
 }
 
 input[type="password"] {

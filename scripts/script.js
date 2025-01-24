@@ -33,10 +33,10 @@ function togglePasswordVisibility() {
   
   if (passwordField.type === 'password') {
     passwordField.type = 'text';
-    eyeIcon.innerHTML = '<img src="../assets/svg/eye.svg" alt="Show Password">';
+    eyeIcon.innerHTML = `<img src="${window.location.pathname.includes('/webpages/') ? '../assets/svg/eye.svg' : './assets/svg/eye.svg'}" alt="Show password" />`;
   } else {
     passwordField.type = 'password';
-    eyeIcon.innerHTML = '<img src="../assets/svg/eye-off.svg" alt="hide Password">';
+    eyeIcon.innerHTML = `<img src="${window.location.pathname.includes('/webpages/') ? '../assets/svg/eye-off.svg' : './assets/svg/eye-off.svg'}" alt="Hide password" />`;
   }
 }
 
