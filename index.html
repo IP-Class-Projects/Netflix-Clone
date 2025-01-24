@@ -13,13 +13,13 @@
     </nav>
     <div class="form-wrapper">
         <h2>Sign In</h2>
-            <form action="./webpages/profile.html">
+            <form onsubmit="validateCredentials(event)">
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" id="login-email" required>
                 <label>Email or phone number</label>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input type="password" id="login-password" required>
                 <label>Password</label>
             </div>
                 <button type="submit">Sign In</button>
@@ -37,5 +37,7 @@
             <a href="#">Learn more.</a>
         </small>
     </div>
+
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

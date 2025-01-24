@@ -118,6 +118,28 @@ form .remember-me input {
 form .form-help :where(label, a) {
     font-size: 0.9rem;
 }
+
+.form-control {
+    position: relative;
+    /* width: 300px; */
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Leave space for the icon on the right */
+    box-sizing: border-box;
+}
+
+#password-eye-icon {
+    position: absolute;
+    right: 10px; /* Adjust spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+
 .form-wrapper p a {
     color: #fff;
 }
