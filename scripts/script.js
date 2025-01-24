@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectedProfile = localStorage.getItem('selectedProfile');
   if (selectedProfile) {
     const profileIcon = document.querySelector('.nav-item.icon img');
-    profileIcon.src = `./assets/images/Icon/Profile/${selectedProfile}.png`;
+    profileIcon.src = `../assets/images/Icon/Profile/${selectedProfile}.png`;
   }
 });
