@@ -99,9 +99,6 @@ function validateCredentials(event) {
   
   const email = document.getElementById('login-email').value.trim();
   const password = document.getElementById('login-password').value;
-  const rememberMe = document.getElementById('remember-me').checked;
-  
-
   const storedUserJson = localStorage.getItem('user');
   
   if (!storedUserJson) {
@@ -112,10 +109,6 @@ function validateCredentials(event) {
   const storedUser = JSON.parse(storedUserJson);
   
   if (email === storedUser.email && btoa(password) === storedUser.passwordHash) {
-    if (rememberMe) {
-      localStorage.setItem('isLoggedIn', 'true');
-    }
-    
     window.location.href = './webpages/profile.html';
   } else {
     alert('Invalid email or password');
