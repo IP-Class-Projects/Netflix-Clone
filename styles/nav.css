@@ -45,6 +45,35 @@ nav {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.signout-button {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px; 
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1vw; 
+  white-space: nowrap; 
+}
+
+.icon:hover .signout-button {
+  display: block;
+}
+
+.icon:hover .hide {
+  color: #0071eb;
+  cursor:pointer; 
+}
+
 @media (max-width: 800px) {
   .nav-items {
     display: none !important;

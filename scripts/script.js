@@ -93,6 +93,10 @@ function saveCredentials(event) {
   localStorage.setItem('user', JSON.stringify(user));
   window.location.href = './profile.html';
 }
+function signOut() {
+  localStorage.removeItem('isLoggedIn');
+  window.location.href = '../index.html';
+}
 
 function validateCredentials(event) {
   event.preventDefault();
